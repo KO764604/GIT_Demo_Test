@@ -27,7 +27,7 @@ public class TestBase {
 	public void envSetup() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("start-maximized");
+		chromeOptions.addArguments("start-maximized using chromeoptions");
 		  driver = new ChromeDriver(chromeOptions);
 		System.out.println(rd.readconfigfile("url"));
 		driver.get(rd.readconfigfile("url"));
